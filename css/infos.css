@@ -13,9 +13,17 @@ header {
   padding: 25px 20px;
 
 }
+.header-content {
+     height: 10px;
+    display: flex; /* Utilisez Flexbox pour aligner le contenu à l'intérieur */
+    flex-direction: column; /* J'ai ajouté cette ligne pour empiler le contenu */
+    align-items: center; /* J'ai ajouté cette ligne pour centrer horizontalement */
+    justify-content: center; /* J'ai ajouté cette ligne pour centrer verticalement */
+
+}
 
 header h1 {
-  margin-bottom: 15px;
+  margin-bottom: 0;
 
 }
 
