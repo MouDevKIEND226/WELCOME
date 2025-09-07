@@ -1,0 +1,109 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h2 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.container input,
+.champ-motdepasse input {
+  width: 100%;
+  padding: 10px 40px 10px 10px; /* espace à droite pour l'œil */
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* important pour éviter dépassement */
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+.champ-motdepasse {
+  position: relative;
+  width: 100%; 
+}
+
+.champ-motdepasse i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+  font-size: 1rem; 
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 15px;
+  background: #2196F3;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn-back:hover {
+  background: #1976D2;
+}
+/* Styles pour le bouton de basculement */
+#theme-toggle-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: transform 0.2s ease;
+}
+
+#theme-toggle-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Styles pour le mode sombre */
+body.dark-mode {
+    background: #121212;
+    color: #f7f7f7;
+}
+
+body.dark-mode header {
+    background: #333;
+    color: #f7f7f7;
+}
+
+body.dark-mode .intro {
+    background: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .intro h2 {
+    color: #bb86fc;
+}
